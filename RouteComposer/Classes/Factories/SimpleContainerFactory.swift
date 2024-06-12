@@ -15,6 +15,7 @@ import UIKit
 
 /// A helper protocol to the `ContainerFactory` protocol. If a container does not need to deal with the children view
 /// controller creation, `SimpleContainerFactory` will handle integration of the children view controllers.
+@MainActor
 public protocol SimpleContainerFactory: ContainerFactory {
 
     // MARK: Associated types

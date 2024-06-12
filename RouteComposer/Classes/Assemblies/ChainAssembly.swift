@@ -14,6 +14,7 @@ import Foundation
 import UIKit
 
 /// Builds a chain of steps.
+@MainActor
 public enum ChainAssembly {
 
     // MARK: Methods

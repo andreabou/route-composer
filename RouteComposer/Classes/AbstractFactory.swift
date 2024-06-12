@@ -16,6 +16,7 @@ import UIKit
 /// Base protocol for all types of factories.
 /// An instance that extends `AbstractFactory` builds a `UIViewController` that will later be
 /// integrated into the stack by the `Router`
+@MainActor
 public protocol AbstractFactory {
 
     // MARK: Associated types

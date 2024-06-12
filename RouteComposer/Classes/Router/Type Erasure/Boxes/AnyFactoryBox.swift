@@ -12,6 +12,7 @@
 
 import Foundation
 
+@MainActor
 protocol AnyFactoryBox: AnyFactory {
 
     associatedtype FactoryType: AbstractFactory
@@ -22,6 +23,7 @@ protocol AnyFactoryBox: AnyFactory {
 
 }
 
+@MainActor
 protocol PreparableAnyFactory: AnyFactory, PreparableEntity {
 
     var isPrepared: Bool { get set }
@@ -36,6 +38,7 @@ extension AnyFactoryBox {
 
 }
 
+@MainActor
 extension AnyFactoryBox where Self: PreparableAnyFactory, Self: MainThreadChecking {
 
     mutating func prepare(with context: AnyContext) throws {

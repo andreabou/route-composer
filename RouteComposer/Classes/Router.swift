@@ -14,6 +14,7 @@ import Foundation
 import UIKit
 
 /// Base router protocol.
+@MainActor
 public protocol Router {
 
     // MARK: Methods to implement
