@@ -23,7 +23,7 @@ public final class RouteComposerDefaults {
     // MARK: Properties
 
     /// Singleton access.
-    public static var shared: RouteComposerDefaults = {
+    public static let shared: RouteComposerDefaults = {
         objc_sync_enter(lock)
         defer {
             objc_sync_exit(lock)
